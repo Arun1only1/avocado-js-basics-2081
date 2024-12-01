@@ -39,3 +39,10 @@
 // let totalAmount = '1025.255';
 // let grossAmount = +totalAmount;
 // console.log(grossAmount, typeof grossAmount);
+
+// ? to string
+// let x = 25;
+// // let y = String(x);
+// let y = `${x}`;
+// console.log(y, typeof y);
+// // console.log(x, typeof x);
