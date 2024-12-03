@@ -103,13 +103,16 @@
 // let c2 = 5 > 2;
 // let c3 = '5' === 5;
 
+// or (||) => plus
+// ? if any one condition is true, result is always true
 // console.log(c1 || c2 || c3);
 // ? short circuit here happens cause c1 is true
 // ? so that c2 and c3 are ignored because result is always true(c1=true)
 
-// and (&&)
+// and (&&) => multiply
+// short circuit
+// => if any one condition false, result is always false
+// let condition1 = 'minal@gmail.com' === 'Minal@gmail.com'; //false
+// let condition2 = 'google_login' !== 'facebook_login'; //true
 
-let condition1 = 'minal@gmail.com' === 'Minal@gmail.com'; //false
-let condition2 = 'google_login' !== 'facebook_login'; //true
-
-console.log(condition1 && condition2);
+// console.log(condition1 && condition2);
