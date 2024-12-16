@@ -124,4 +124,14 @@
 
 // Write a JS code to print  square of numbers from 1 to n
 
+// let n = 200;
+// let i = 1;
+// while (i <= n) {
+//   console.log(i ** 2);
+//   i++;
+// }
+
+// ? factorial
 // WAP to print product of numbers from 1 to 5
+
+// ? check if provided number is prime or not
