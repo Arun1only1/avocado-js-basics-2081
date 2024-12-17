@@ -56,6 +56,47 @@ let collegeList = ['KEC', 'Himalayan', 'NCIT', 'ACHS'];
 
 // console.log(newScores);
 
+// map
+
+// ?2. let prices = [10,15,30,2,5,90]
+//?2. provide 20% flat discount on all chocolate Price
+
+// let prices = [10, 15, 30, 2, 5, 90];
+
+// const newPrices = prices.map((item, index, array) => {
+//   let newPrice = item - (20 / 100) * item;
+
+//   return newPrice;
+// });
+
+// console.log(newPrices);
+
+// ? one liner
+// const newPrices = prices.map((item) => item - (20 / 100) * item);
+
+// console.log(newPrices);
+
+// let marks = [25, 35, 30, 29, 55, 65];
+// pass marks being 32
+//  give grace marks of 5 to student who could not pass
+
+// const newMarks = marks.map((mark, index, array) => {
+//   if (mark < 32) {
+//     let newMark = mark + 5;
+//     return newMark;
+//   }
+
+//   return mark;
+// });
+
+// console.log(newMarks);
+
+//? one liner
+
+// const newMarks = marks.map((mark) => (mark < 32 ? mark + 5 : mark));
+
+// console.log(newMarks);
+
 const productList = [
   {
     name: 'Shoes',
@@ -81,4 +122,77 @@ const productList = [
 
 //   ? increase price of each product by 1000 due to recent tax increase
 
+// const newProductList = productList.map((item, index, array) => {
+//   let newPrice = item.price + 1000;
+
+//   let newItem = { ...item, price: newPrice };
+
+//   return newItem;
+// });
+
+// console.log(newProductList);
+
+// ? one liner
+// const newProductList = productList.map((item) => ({
+//   ...item,
+//   price: item.price + 1000,
+// }));
+
+// console.log(newProductList);
+// console.log(productList);
+
+// ? simple way
+// const newProductList = productList.map((item, index, array) => {
+//   item.price = item.price + 1productList
+
 // ? decrease price of items having price greater than 10k by 2k
+// const newProductList = productList.map((item, index, array) => {
+//   if (item.price > 10000) {
+//     item.price = item.price - 2000;
+
+//     return item;
+//   } else {
+//     return item;
+//   }
+// });
+
+// const newProductList = productList.map((item, index, array) => {
+//   if (item.price > 10000) {
+//     return { ...item, price: item.price - 2000 };
+//   }
+
+//   return item;
+// });
+
+// console.log(newProductList);
+
+//   ? increase price of each product by 1000 due to recent tax increase
+// ? if increased price crosses 10k, decrease it by 2k
+
+// const newProductList = productList.map((item, index, array) => {
+//   let newPrice = item.price;
+
+//   if (item.price < 10000) {
+//     newPrice = item.price + 1000;
+//   }
+
+//   if (newPrice > 10000) {
+//     newPrice = newPrice - 2000;
+//   }
+
+//   return { ...item, price: newPrice };
+// });
+
+// console.log(newProductList);
+
+// ? increase price of "cap"  by 500
+
+// const newProductList = productList.map((item, index, array) => {
+//   if (item.name === 'cap') {
+//     item.price = item.price + 500;
+//   }
+
+//   return item;
+// });
+
+// console.log(newProductList);
