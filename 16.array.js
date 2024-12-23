@@ -31,3 +31,5 @@
 // ? create an array called bikeBrands and print all values using loop
 
 // TODO: why data type of array is object
+
+// TODO: array destructure

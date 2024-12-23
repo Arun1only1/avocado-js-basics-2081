@@ -154,3 +154,5 @@ const checkPrime = (num) => {
 
 const res = checkPrime(15);
 console.log(res);
+
+// TODO: rest and default parameter
